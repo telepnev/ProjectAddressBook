@@ -3,18 +3,18 @@ package ru.telepnev.AddressBook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class NavigationHelper {
-    public WebDriver wd;
+public class NavigationHelper extends HelperBase {
 
     public NavigationHelper(WebDriver wd) {
-        this.wd = wd;
+        super(wd);
     }
 
     public void gotoHomePage() {
-        wd.findElement(By.xpath("//a[@href='./']")).click();
+        click(By.xpath("//a[@href='./']"));
     }
 
     public void goToGroupPage() {
-        wd.findElement(By.linkText("groups")).click();
+        click(By.linkText("groups"));
     }
+
 }
