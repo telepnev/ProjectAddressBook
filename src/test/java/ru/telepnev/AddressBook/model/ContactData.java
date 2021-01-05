@@ -1,4 +1,4 @@
-package ru.telepnev.AddressBook;
+package ru.telepnev.AddressBook.model;
 
 public class ContactData {
     private final String firstname;
