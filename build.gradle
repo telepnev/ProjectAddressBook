@@ -20,8 +20,8 @@ targetCompatibility = 1.8
 dependencies {
     implementation('org.seleniumhq.selenium:selenium-java:3.141.59')
     implementation('io.github.bonigarcia:webdrivermanager:4.2.0')
+    implementation('mysql:mysql-connector-java:8.0.22')
     testImplementation('org.slf4j:slf4j-simple:1.7.29')
-
     testImplementation('org.testng:testng:7.1.0')
 }
 
